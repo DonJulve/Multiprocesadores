@@ -15,4 +15,4 @@ Este repositorio contiene los programas desarrollados en la asignatura de Multip
 - **OpenMP**: Para la realización de los programas de paralelización.
 
 ### Repositorio de la asignatura
-[Click me!!!](https://github.com/universidad-zaragoza/30237_MP)
+- [Click me!!!](https://github.com/universidad-zaragoza/30237_MP)
