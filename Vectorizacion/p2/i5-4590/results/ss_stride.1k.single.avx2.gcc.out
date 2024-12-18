@@ -1,0 +1,4 @@
+                     Time       TPE
+             Loop     ns       ps/el     Checksum
+     ss_stride_esc   400.1     390.7     3071.999756 
+     ss_stride_vec   398.7     389.3     3071.999756 

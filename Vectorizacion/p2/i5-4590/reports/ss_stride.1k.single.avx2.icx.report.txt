@@ -1,0 +1,110 @@
+Global optimization report for : get_wall_time
+=================================================================
+
+Global optimization report for : check
+
+LOOP BEGIN at ../ss_stride.c (76, 3)
+    remark #15319: Loop was not vectorized: novector directive used
+    remark #25438: Loop unrolled without remainder by 8
+LOOP END
+=================================================================
+
+Global optimization report for : init
+
+LOOP BEGIN at ../ss_stride.c (91, 3)
+    remark #15319: Loop was not vectorized: novector directive used
+    remark #25438: Loop unrolled without remainder by 8
+LOOP END
+=================================================================
+
+Global optimization report for : results
+=================================================================
+
+Global optimization report for : ss_stride_esc
+
+LOOP BEGIN at ../ss_stride.c (117, 3)
+
+    LOOP BEGIN at ../ss_stride.c (122, 5)
+        remark #15319: Loop was not vectorized: novector directive used
+        remark #25438: Loop unrolled without remainder by 8
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : ss_stride_vec
+
+LOOP BEGIN at ../ss_stride.c (140, 3)
+
+    LOOP BEGIN at ../ss_stride.c (142, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        remark #25438: Loop unrolled without remainder by 8
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : main
+
+LOOP BEGIN at ../ss_stride.c (117, 3)
+
+    LOOP BEGIN at ../ss_stride.c (122, 5)
+        remark #15319: Loop was not vectorized: novector directive used
+        remark #25438: Loop unrolled without remainder by 8
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ../ss_stride.c (140, 3)
+
+    LOOP BEGIN at ../ss_stride.c (142, 5)
+        remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+        remark #25438: Loop unrolled without remainder by 8
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: check
+   -> llvm.vector.reduce.fadd.v8f32 ../ss_stride.c (77,9)
+
+COMPILE FUNC: ss_stride_vec
+   -> init ../ss_stride.c (138,3)
+   -> get_wall_time ../ss_stride.c (139,13)
+   -> get_wall_time ../ss_stride.c (148,11)
+   -> results ../ss_stride.c (149,3)
+   -> check ../ss_stride.c (150,3)
+
+COMPILE FUNC: init
+
+COMPILE FUNC: get_wall_time
+
+COMPILE FUNC: results
+
+COMPILE FUNC: ss_stride_esc
+   -> init ../ss_stride.c (115,3)
+   -> get_wall_time ../ss_stride.c (116,13)
+   -> get_wall_time ../ss_stride.c (128,11)
+   -> results ../ss_stride.c (129,3)
+   -> check ../ss_stride.c (130,3)
+
+COMPILE FUNC: main
+   -> DELETE: printf ../ss_stride.c (180,3)
+   -> DELETE: printf ../ss_stride.c (181,3)
+   -> INLINE: ss_stride_esc ../ss_stride.c (182,3)
+      -> init ../ss_stride.c (115,3)
+      -> get_wall_time ../ss_stride.c (116,13)
+      -> get_wall_time ../ss_stride.c (128,11)
+      -> results ../ss_stride.c (129,3)
+      -> check ../ss_stride.c (130,3)
+   -> INLINE: ss_stride_vec ../ss_stride.c (183,3)
+      -> init ../ss_stride.c (138,3)
+      -> get_wall_time ../ss_stride.c (139,13)
+      -> get_wall_time ../ss_stride.c (148,11)
+      -> results ../ss_stride.c (149,3)
+      -> check ../ss_stride.c (150,3)
+
+---- End Inlining Report ------

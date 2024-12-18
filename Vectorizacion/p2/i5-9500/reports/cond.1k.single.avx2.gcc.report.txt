@@ -1,0 +1,2 @@
+../cond.c:75:32: optimized: versioned this loop for when certain strides are 1
+../cond.c:157:32: optimized: loop vectorized using 32 byte vectors

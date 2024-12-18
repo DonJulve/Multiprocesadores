@@ -1,0 +1,781 @@
+
+pi_serie:     file format elf64-littleaarch64
+
+
+Disassembly of section .init:
+
+0000000000400968 <_init>:
+  400968:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+  40096c:	910003fd 	mov	x29, sp
+  400970:	94000060 	bl	400af0 <call_weak_fn>
+  400974:	a8c17bfd 	ldp	x29, x30, [sp], #16
+  400978:	d65f03c0 	ret
+
+Disassembly of section .plt:
+
+0000000000400980 <.plt>:
+  400980:	a9bf7bf0 	stp	x16, x30, [sp, #-16]!
+  400984:	b0000090 	adrp	x16, 411000 <__FRAME_END__+0xf8f0>
+  400988:	f947fe11 	ldr	x17, [x16, #4088]
+  40098c:	913fe210 	add	x16, x16, #0xff8
+  400990:	d61f0220 	br	x17
+  400994:	d503201f 	nop
+  400998:	d503201f 	nop
+  40099c:	d503201f 	nop
+
+00000000004009a0 <std::chrono::_V2::system_clock::now()@plt>:
+  4009a0:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  4009a4:	f9400211 	ldr	x17, [x16]
+  4009a8:	91000210 	add	x16, x16, #0x0
+  4009ac:	d61f0220 	br	x17
+
+00000000004009b0 <std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)@plt>:
+  4009b0:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  4009b4:	f9400611 	ldr	x17, [x16, #8]
+  4009b8:	91002210 	add	x16, x16, #0x8
+  4009bc:	d61f0220 	br	x17
+
+00000000004009c0 <std::ostream::operator<<(float)@plt>:
+  4009c0:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  4009c4:	f9400a11 	ldr	x17, [x16, #16]
+  4009c8:	91004210 	add	x16, x16, #0x10
+  4009cc:	d61f0220 	br	x17
+
+00000000004009d0 <__libc_start_main@plt>:
+  4009d0:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  4009d4:	f9400e11 	ldr	x17, [x16, #24]
+  4009d8:	91006210 	add	x16, x16, #0x18
+  4009dc:	d61f0220 	br	x17
+
+00000000004009e0 <clock@plt>:
+  4009e0:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  4009e4:	f9401211 	ldr	x17, [x16, #32]
+  4009e8:	91008210 	add	x16, x16, #0x20
+  4009ec:	d61f0220 	br	x17
+
+00000000004009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>:
+  4009f0:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  4009f4:	f9401611 	ldr	x17, [x16, #40]
+  4009f8:	9100a210 	add	x16, x16, #0x28
+  4009fc:	d61f0220 	br	x17
+
+0000000000400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>:
+  400a00:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a04:	f9401a11 	ldr	x17, [x16, #48]
+  400a08:	9100c210 	add	x16, x16, #0x30
+  400a0c:	d61f0220 	br	x17
+
+0000000000400a10 <__cxa_atexit@plt>:
+  400a10:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a14:	f9401e11 	ldr	x17, [x16, #56]
+  400a18:	9100e210 	add	x16, x16, #0x38
+  400a1c:	d61f0220 	br	x17
+
+0000000000400a20 <std::ios_base::Init::Init()@plt>:
+  400a20:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a24:	f9402211 	ldr	x17, [x16, #64]
+  400a28:	91010210 	add	x16, x16, #0x40
+  400a2c:	d61f0220 	br	x17
+
+0000000000400a30 <strtoull@plt>:
+  400a30:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a34:	f9402611 	ldr	x17, [x16, #72]
+  400a38:	91012210 	add	x16, x16, #0x48
+  400a3c:	d61f0220 	br	x17
+
+0000000000400a40 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::_Setprecision)@plt>:
+  400a40:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a44:	f9402a11 	ldr	x17, [x16, #80]
+  400a48:	91014210 	add	x16, x16, #0x50
+  400a4c:	d61f0220 	br	x17
+
+0000000000400a50 <abort@plt>:
+  400a50:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a54:	f9402e11 	ldr	x17, [x16, #88]
+  400a58:	91016210 	add	x16, x16, #0x58
+  400a5c:	d61f0220 	br	x17
+
+0000000000400a60 <exit@plt>:
+  400a60:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a64:	f9403211 	ldr	x17, [x16, #96]
+  400a68:	91018210 	add	x16, x16, #0x60
+  400a6c:	d61f0220 	br	x17
+
+0000000000400a70 <__gmon_start__@plt>:
+  400a70:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a74:	f9403611 	ldr	x17, [x16, #104]
+  400a78:	9101a210 	add	x16, x16, #0x68
+  400a7c:	d61f0220 	br	x17
+
+0000000000400a80 <std::ostream::operator<<(double)@plt>:
+  400a80:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a84:	f9403a11 	ldr	x17, [x16, #112]
+  400a88:	9101c210 	add	x16, x16, #0x70
+  400a8c:	d61f0220 	br	x17
+
+0000000000400a90 <std::ios_base::Init::~Init()@plt>:
+  400a90:	d0000090 	adrp	x16, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400a94:	f9403e11 	ldr	x17, [x16, #120]
+  400a98:	9101e210 	add	x16, x16, #0x78
+  400a9c:	d61f0220 	br	x17
+
+Disassembly of section .text:
+
+0000000000400aa0 <_start>:
+  400aa0:	d280001d 	mov	x29, #0x0                   	// #0
+  400aa4:	d280001e 	mov	x30, #0x0                   	// #0
+  400aa8:	aa0003e5 	mov	x5, x0
+  400aac:	f94003e1 	ldr	x1, [sp]
+  400ab0:	910023e2 	add	x2, sp, #0x8
+  400ab4:	910003e6 	mov	x6, sp
+  400ab8:	d2e00000 	movz	x0, #0x0, lsl #48
+  400abc:	f2c00000 	movk	x0, #0x0, lsl #32
+  400ac0:	f2a00800 	movk	x0, #0x40, lsl #16
+  400ac4:	f2817680 	movk	x0, #0xbb4
+  400ac8:	d2e00003 	movz	x3, #0x0, lsl #48
+  400acc:	f2c00003 	movk	x3, #0x0, lsl #32
+  400ad0:	f2a00803 	movk	x3, #0x40, lsl #16
+  400ad4:	f2824003 	movk	x3, #0x1200
+  400ad8:	d2e00004 	movz	x4, #0x0, lsl #48
+  400adc:	f2c00004 	movk	x4, #0x0, lsl #32
+  400ae0:	f2a00804 	movk	x4, #0x40, lsl #16
+  400ae4:	f2825004 	movk	x4, #0x1280
+  400ae8:	97ffffba 	bl	4009d0 <__libc_start_main@plt>
+  400aec:	97ffffd9 	bl	400a50 <abort@plt>
+
+0000000000400af0 <call_weak_fn>:
+  400af0:	b0000080 	adrp	x0, 411000 <__FRAME_END__+0xf8f0>
+  400af4:	f947f000 	ldr	x0, [x0, #4064]
+  400af8:	b4000040 	cbz	x0, 400b00 <call_weak_fn+0x10>
+  400afc:	17ffffdd 	b	400a70 <__gmon_start__@plt>
+  400b00:	d65f03c0 	ret
+  400b04:	d503201f 	nop
+  400b08:	d503201f 	nop
+  400b0c:	d503201f 	nop
+
+0000000000400b10 <deregister_tm_clones>:
+  400b10:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400b14:	91024000 	add	x0, x0, #0x90
+  400b18:	d0000081 	adrp	x1, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400b1c:	91024021 	add	x1, x1, #0x90
+  400b20:	eb00003f 	cmp	x1, x0
+  400b24:	540000c0 	b.eq	400b3c <deregister_tm_clones+0x2c>  // b.none
+  400b28:	b0000001 	adrp	x1, 401000 <_GLOBAL__sub_I_main+0x10>
+  400b2c:	f9415021 	ldr	x1, [x1, #672]
+  400b30:	b4000061 	cbz	x1, 400b3c <deregister_tm_clones+0x2c>
+  400b34:	aa0103f0 	mov	x16, x1
+  400b38:	d61f0200 	br	x16
+  400b3c:	d65f03c0 	ret
+
+0000000000400b40 <register_tm_clones>:
+  400b40:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400b44:	91024000 	add	x0, x0, #0x90
+  400b48:	d0000081 	adrp	x1, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400b4c:	91024021 	add	x1, x1, #0x90
+  400b50:	cb000021 	sub	x1, x1, x0
+  400b54:	d37ffc22 	lsr	x2, x1, #63
+  400b58:	8b810c41 	add	x1, x2, x1, asr #3
+  400b5c:	9341fc21 	asr	x1, x1, #1
+  400b60:	b40000c1 	cbz	x1, 400b78 <register_tm_clones+0x38>
+  400b64:	b0000002 	adrp	x2, 401000 <_GLOBAL__sub_I_main+0x10>
+  400b68:	f9415442 	ldr	x2, [x2, #680]
+  400b6c:	b4000062 	cbz	x2, 400b78 <register_tm_clones+0x38>
+  400b70:	aa0203f0 	mov	x16, x2
+  400b74:	d61f0200 	br	x16
+  400b78:	d65f03c0 	ret
+  400b7c:	d503201f 	nop
+
+0000000000400b80 <__do_global_dtors_aux>:
+  400b80:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  400b84:	910003fd 	mov	x29, sp
+  400b88:	f9000bf3 	str	x19, [sp, #16]
+  400b8c:	d0000093 	adrp	x19, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400b90:	39468260 	ldrb	w0, [x19, #416]
+  400b94:	35000080 	cbnz	w0, 400ba4 <__do_global_dtors_aux+0x24>
+  400b98:	97ffffde 	bl	400b10 <deregister_tm_clones>
+  400b9c:	52800020 	mov	w0, #0x1                   	// #1
+  400ba0:	39068260 	strb	w0, [x19, #416]
+  400ba4:	f9400bf3 	ldr	x19, [sp, #16]
+  400ba8:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  400bac:	d65f03c0 	ret
+
+0000000000400bb0 <frame_dummy>:
+  400bb0:	17ffffe4 	b	400b40 <register_tm_clones>
+
+0000000000400bb4 <main>:
+#include <ctime>
+#include <chrono>
+#include <limits>
+#include <iomanip>
+
+int main(int argc, char **argv){
+  400bb4:	a9b67bfd 	stp	x29, x30, [sp, #-160]!
+  400bb8:	910003fd 	mov	x29, sp
+  400bbc:	f9000bf3 	str	x19, [sp, #16]
+  400bc0:	b9002fe0 	str	w0, [sp, #44]
+  400bc4:	f90013e1 	str	x1, [sp, #32]
+  int64_t nsubintervals = 100000000;
+  400bc8:	d29c2000 	mov	x0, #0xe100                	// #57600
+  400bcc:	f2a0bea0 	movk	x0, #0x5f5, lsl #16
+  400bd0:	f90047e0 	str	x0, [sp, #136]
+  double x, pi, area, subinterval;
+  long int i;
+  int count1, count2, cr;
+  char *pfin;
+
+  if (argc != 2){
+  400bd4:	b9402fe0 	ldr	w0, [sp, #44]
+  400bd8:	7100081f 	cmp	w0, #0x2
+  400bdc:	540001a0 	b.eq	400c10 <main+0x5c>  // b.none
+    std::cout << "USO: comando n_subintervalos" << std::endl;
+  400be0:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400be4:	910ac001 	add	x1, x0, #0x2b0
+  400be8:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400bec:	91024000 	add	x0, x0, #0x90
+  400bf0:	97ffff80 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400bf4:	aa0003e2 	mov	x2, x0
+  400bf8:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400bfc:	9126c001 	add	x1, x0, #0x9b0
+  400c00:	aa0203e0 	mov	x0, x2
+  400c04:	97ffff7f 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+	exit(0);
+  400c08:	52800000 	mov	w0, #0x0                   	// #0
+  400c0c:	97ffff95 	bl	400a60 <exit@plt>
+  }
+ 
+  nsubintervals = strtoull(argv[1], &pfin, 10);
+  400c10:	f94013e0 	ldr	x0, [sp, #32]
+  400c14:	91002000 	add	x0, x0, #0x8
+  400c18:	f9400000 	ldr	x0, [x0]
+  400c1c:	910143e1 	add	x1, sp, #0x50
+  400c20:	52800142 	mov	w2, #0xa                   	// #10
+  400c24:	97ffff83 	bl	400a30 <strtoull@plt>
+  400c28:	f90047e0 	str	x0, [sp, #136]
+
+  std::cout << "Nº de procesadores: 1" << std::endl;
+  400c2c:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400c30:	910b4001 	add	x1, x0, #0x2d0
+  400c34:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400c38:	91024000 	add	x0, x0, #0x90
+  400c3c:	97ffff6d 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400c40:	aa0003e2 	mov	x2, x0
+  400c44:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400c48:	9126c001 	add	x1, x0, #0x9b0
+  400c4c:	aa0203e0 	mov	x0, x2
+  400c50:	97ffff6c 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << "Nª de threads: 1" << std::endl;
+  400c54:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400c58:	910ba001 	add	x1, x0, #0x2e8
+  400c5c:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400c60:	91024000 	add	x0, x0, #0x90
+  400c64:	97ffff63 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400c68:	aa0003e2 	mov	x2, x0
+  400c6c:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400c70:	9126c001 	add	x1, x0, #0x9b0
+  400c74:	aa0203e0 	mov	x0, x2
+  400c78:	97ffff62 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << "Resolución de los relojes:" << std::endl;
+  400c7c:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400c80:	910c0001 	add	x1, x0, #0x300
+  400c84:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400c88:	91024000 	add	x0, x0, #0x90
+  400c8c:	97ffff59 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400c90:	aa0003e2 	mov	x2, x0
+  400c94:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400c98:	9126c001 	add	x1, x0, #0x9b0
+  400c9c:	aa0203e0 	mov	x0, x2
+  400ca0:	97ffff58 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << " - system_clock(std::clock): " << 1e6/CLOCKS_PER_SEC << " us -- " << CLOCKS_PER_SEC/1e6 << " MHz" << std::endl;
+  400ca4:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400ca8:	910c8001 	add	x1, x0, #0x320
+  400cac:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400cb0:	91024000 	add	x0, x0, #0x90
+  400cb4:	97ffff4f 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400cb8:	1e6e1000 	fmov	d0, #1.000000000000000000e+00
+  400cbc:	97ffff71 	bl	400a80 <std::ostream::operator<<(double)@plt>
+  400cc0:	aa0003e2 	mov	x2, x0
+  400cc4:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400cc8:	910d0001 	add	x1, x0, #0x340
+  400ccc:	aa0203e0 	mov	x0, x2
+  400cd0:	97ffff48 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400cd4:	1e6e1000 	fmov	d0, #1.000000000000000000e+00
+  400cd8:	97ffff6a 	bl	400a80 <std::ostream::operator<<(double)@plt>
+  400cdc:	aa0003e2 	mov	x2, x0
+  400ce0:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400ce4:	910d2001 	add	x1, x0, #0x348
+  400ce8:	aa0203e0 	mov	x0, x2
+  400cec:	97ffff41 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400cf0:	aa0003e2 	mov	x2, x0
+  400cf4:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400cf8:	9126c001 	add	x1, x0, #0x9b0
+  400cfc:	aa0203e0 	mov	x0, x2
+  400d00:	97ffff40 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+
+  std::clock_t t_start1 = std::clock();
+  400d04:	97ffff37 	bl	4009e0 <clock@plt>
+  400d08:	f90043e0 	str	x0, [sp, #128]
+  auto t_start2 = std::chrono::high_resolution_clock::now();
+  400d0c:	97ffff25 	bl	4009a0 <std::chrono::_V2::system_clock::now()@plt>
+  400d10:	f90027e0 	str	x0, [sp, #72]
+
+  subinterval = 1.0 / nsubintervals;
+  400d14:	fd4047e0 	ldr	d0, [sp, #136]
+  400d18:	5e61d800 	scvtf	d0, d0
+  400d1c:	1e6e1001 	fmov	d1, #1.000000000000000000e+00
+  400d20:	1e601820 	fdiv	d0, d1, d0
+  400d24:	fd003fe0 	str	d0, [sp, #120]
+  area = 0.0;
+  400d28:	f9004fff 	str	xzr, [sp, #152]
+
+  for (i = 0; i < nsubintervals; i++){
+  400d2c:	f9004bff 	str	xzr, [sp, #144]
+  400d30:	14000014 	b	400d80 <main+0x1cc>
+    double x = (i-0.5)*subinterval;  // S1
+  400d34:	fd404be0 	ldr	d0, [sp, #144]
+  400d38:	5e61d801 	scvtf	d1, d0
+  400d3c:	1e6c1000 	fmov	d0, #5.000000000000000000e-01
+  400d40:	1e603820 	fsub	d0, d1, d0
+  400d44:	fd403fe1 	ldr	d1, [sp, #120]
+  400d48:	1e600820 	fmul	d0, d1, d0
+  400d4c:	fd0033e0 	str	d0, [sp, #96]
+    area = area + 4.0/(1.0 + x*x);   // S2
+  400d50:	fd4033e0 	ldr	d0, [sp, #96]
+  400d54:	1e600801 	fmul	d1, d0, d0
+  400d58:	1e6e1000 	fmov	d0, #1.000000000000000000e+00
+  400d5c:	1e602820 	fadd	d0, d1, d0
+  400d60:	1e621001 	fmov	d1, #4.000000000000000000e+00
+  400d64:	1e601820 	fdiv	d0, d1, d0
+  400d68:	fd404fe1 	ldr	d1, [sp, #152]
+  400d6c:	1e602820 	fadd	d0, d1, d0
+  400d70:	fd004fe0 	str	d0, [sp, #152]
+  for (i = 0; i < nsubintervals; i++){
+  400d74:	f9404be0 	ldr	x0, [sp, #144]
+  400d78:	91000400 	add	x0, x0, #0x1
+  400d7c:	f9004be0 	str	x0, [sp, #144]
+  400d80:	f9404be1 	ldr	x1, [sp, #144]
+  400d84:	f94047e0 	ldr	x0, [sp, #136]
+  400d88:	eb00003f 	cmp	x1, x0
+  400d8c:	54fffd4b 	b.lt	400d34 <main+0x180>  // b.tstop
+  }
+
+  pi = subinterval*area;
+  400d90:	fd403fe1 	ldr	d1, [sp, #120]
+  400d94:	fd404fe0 	ldr	d0, [sp, #152]
+  400d98:	1e600820 	fmul	d0, d1, d0
+  400d9c:	fd003be0 	str	d0, [sp, #112]
+
+  auto t_end2 = std::chrono::high_resolution_clock::now();
+  400da0:	97ffff00 	bl	4009a0 <std::chrono::_V2::system_clock::now()@plt>
+  400da4:	f90023e0 	str	x0, [sp, #64]
+  std::clock_t t_end1 = std::clock();
+  400da8:	97ffff0e 	bl	4009e0 <clock@plt>
+  400dac:	f90037e0 	str	x0, [sp, #104]
+  std::chrono::duration<double> elapsed_seconds2 = t_end2-t_start2;
+  400db0:	910123e1 	add	x1, sp, #0x48
+  400db4:	910103e0 	add	x0, sp, #0x40
+  400db8:	940000b8 	bl	401098 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)>
+  400dbc:	f9002fe0 	str	x0, [sp, #88]
+  400dc0:	910163e1 	add	x1, sp, #0x58
+  400dc4:	9100e3e0 	add	x0, sp, #0x38
+  400dc8:	940000a6 	bl	401060 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+
+  std::cout << "***************************************" << std::endl;
+  400dcc:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400dd0:	910d4001 	add	x1, x0, #0x350
+  400dd4:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400dd8:	91024000 	add	x0, x0, #0x90
+  400ddc:	97ffff05 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400de0:	aa0003e2 	mov	x2, x0
+  400de4:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400de8:	9126c001 	add	x1, x0, #0x9b0
+  400dec:	aa0203e0 	mov	x0, x2
+  400df0:	97ffff04 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << " PIcalculado =" << std::setprecision(18) << pi << std::endl;
+  400df4:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400df8:	910de001 	add	x1, x0, #0x378
+  400dfc:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400e00:	91024000 	add	x0, x0, #0x90
+  400e04:	97fffefb 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400e08:	aa0003f3 	mov	x19, x0
+  400e0c:	52800240 	mov	w0, #0x12                  	// #18
+  400e10:	9400008f 	bl	40104c <std::setprecision(int)>
+  400e14:	2a0003e1 	mov	w1, w0
+  400e18:	aa1303e0 	mov	x0, x19
+  400e1c:	97ffff09 	bl	400a40 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::_Setprecision)@plt>
+  400e20:	fd403be0 	ldr	d0, [sp, #112]
+  400e24:	97ffff17 	bl	400a80 <std::ostream::operator<<(double)@plt>
+  400e28:	aa0003e2 	mov	x2, x0
+  400e2c:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400e30:	9126c001 	add	x1, x0, #0x9b0
+  400e34:	aa0203e0 	mov	x0, x2
+  400e38:	97fffef2 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << " PIreal = 3.1415926535897932385" << std::endl;
+  400e3c:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400e40:	910e2001 	add	x1, x0, #0x388
+  400e44:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400e48:	91024000 	add	x0, x0, #0x90
+  400e4c:	97fffee9 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400e50:	aa0003e2 	mov	x2, x0
+  400e54:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400e58:	9126c001 	add	x1, x0, #0x9b0
+  400e5c:	aa0203e0 	mov	x0, x2
+  400e60:	97fffee8 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << std::endl;
+  400e64:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400e68:	9126c001 	add	x1, x0, #0x9b0
+  400e6c:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400e70:	91024000 	add	x0, x0, #0x90
+  400e74:	97fffee3 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << "*** tiempos ***" << std::endl;
+  400e78:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400e7c:	910ea001 	add	x1, x0, #0x3a8
+  400e80:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400e84:	91024000 	add	x0, x0, #0x90
+  400e88:	97fffeda 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400e8c:	aa0003e2 	mov	x2, x0
+  400e90:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400e94:	9126c001 	add	x1, x0, #0x9b0
+  400e98:	aa0203e0 	mov	x0, x2
+  400e9c:	97fffed9 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << "CPU clock = " << (((float)(t_end1-t_start1))/CLOCKS_PER_SEC) << " sg" << std::endl;
+  400ea0:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400ea4:	910ee001 	add	x1, x0, #0x3b8
+  400ea8:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400eac:	91024000 	add	x0, x0, #0x90
+  400eb0:	97fffed0 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400eb4:	aa0003e2 	mov	x2, x0
+  400eb8:	f94037e1 	ldr	x1, [sp, #104]
+  400ebc:	f94043e0 	ldr	x0, [sp, #128]
+  400ec0:	cb000020 	sub	x0, x1, x0
+  400ec4:	9e220000 	scvtf	s0, x0
+  400ec8:	52848000 	mov	w0, #0x2400                	// #9216
+  400ecc:	72a92e80 	movk	w0, #0x4974, lsl #16
+  400ed0:	1e270001 	fmov	s1, w0
+  400ed4:	1e211800 	fdiv	s0, s0, s1
+  400ed8:	aa0203e0 	mov	x0, x2
+  400edc:	97fffeb9 	bl	4009c0 <std::ostream::operator<<(float)@plt>
+  400ee0:	aa0003e2 	mov	x2, x0
+  400ee4:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400ee8:	910f2001 	add	x1, x0, #0x3c8
+  400eec:	aa0203e0 	mov	x0, x2
+  400ef0:	97fffec0 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400ef4:	aa0003e2 	mov	x2, x0
+  400ef8:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400efc:	9126c001 	add	x1, x0, #0x9b0
+  400f00:	aa0203e0 	mov	x0, x2
+  400f04:	97fffebf 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << "Wall Clock = " << elapsed_seconds2.count() << " sg" << std::endl;
+  400f08:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400f0c:	910f4001 	add	x1, x0, #0x3d0
+  400f10:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400f14:	91024000 	add	x0, x0, #0x90
+  400f18:	97fffeb6 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400f1c:	aa0003f3 	mov	x19, x0
+  400f20:	9100e3e0 	add	x0, sp, #0x38
+  400f24:	94000094 	bl	401174 <std::chrono::duration<double, std::ratio<1l, 1l> >::count() const>
+  400f28:	aa1303e0 	mov	x0, x19
+  400f2c:	97fffed5 	bl	400a80 <std::ostream::operator<<(double)@plt>
+  400f30:	aa0003e2 	mov	x2, x0
+  400f34:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400f38:	910f2001 	add	x1, x0, #0x3c8
+  400f3c:	aa0203e0 	mov	x0, x2
+  400f40:	97fffeac 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400f44:	aa0003e2 	mov	x2, x0
+  400f48:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400f4c:	9126c001 	add	x1, x0, #0x9b0
+  400f50:	aa0203e0 	mov	x0, x2
+  400f54:	97fffeab 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+  std::cout << "-----------------------------------------" << std::endl;
+  400f58:	b0000000 	adrp	x0, 401000 <_GLOBAL__sub_I_main+0x10>
+  400f5c:	910f8001 	add	x1, x0, #0x3e0
+  400f60:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400f64:	91024000 	add	x0, x0, #0x90
+  400f68:	97fffea2 	bl	4009f0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+  400f6c:	aa0003e2 	mov	x2, x0
+  400f70:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400f74:	9126c001 	add	x1, x0, #0x9b0
+  400f78:	aa0203e0 	mov	x0, x2
+  400f7c:	97fffea1 	bl	400a00 <std::ostream::operator<<(std::ostream& (*)(std::ostream&))@plt>
+
+}
+  400f80:	52800000 	mov	w0, #0x0                   	// #0
+  400f84:	f9400bf3 	ldr	x19, [sp, #16]
+  400f88:	a8ca7bfd 	ldp	x29, x30, [sp], #160
+  400f8c:	d65f03c0 	ret
+
+0000000000400f90 <__static_initialization_and_destruction_0(int, int)>:
+  400f90:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  400f94:	910003fd 	mov	x29, sp
+  400f98:	b9001fe0 	str	w0, [sp, #28]
+  400f9c:	b9001be1 	str	w1, [sp, #24]
+  400fa0:	b9401fe0 	ldr	w0, [sp, #28]
+  400fa4:	7100041f 	cmp	w0, #0x1
+  400fa8:	540001e1 	b.ne	400fe4 <__static_initialization_and_destruction_0(int, int)+0x54>  // b.any
+  400fac:	b9401be1 	ldr	w1, [sp, #24]
+  400fb0:	529fffe0 	mov	w0, #0xffff                	// #65535
+  400fb4:	6b00003f 	cmp	w1, w0
+  400fb8:	54000161 	b.ne	400fe4 <__static_initialization_and_destruction_0(int, int)+0x54>  // b.any
+  extern wostream wclog;	/// Linked to standard error (buffered)
+#endif
+  ///@}
+
+  // For construction of filebuffers for cout, cin, cerr, clog et. al.
+  static ios_base::Init __ioinit;
+  400fbc:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400fc0:	9106a000 	add	x0, x0, #0x1a8
+  400fc4:	97fffe97 	bl	400a20 <std::ios_base::Init::Init()@plt>
+  400fc8:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400fcc:	91022002 	add	x2, x0, #0x88
+  400fd0:	d0000080 	adrp	x0, 412000 <std::chrono::_V2::system_clock::now()@GLIBCXX_3.4.19>
+  400fd4:	9106a001 	add	x1, x0, #0x1a8
+  400fd8:	90000000 	adrp	x0, 400000 <_init-0x968>
+  400fdc:	912a4000 	add	x0, x0, #0xa90
+  400fe0:	97fffe8c 	bl	400a10 <__cxa_atexit@plt>
+  400fe4:	d503201f 	nop
+  400fe8:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  400fec:	d65f03c0 	ret
+
+0000000000400ff0 <_GLOBAL__sub_I_main>:
+  400ff0:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+  400ff4:	910003fd 	mov	x29, sp
+  400ff8:	529fffe1 	mov	w1, #0xffff                	// #65535
+  400ffc:	52800020 	mov	w0, #0x1                   	// #1
+  401000:	97ffffe4 	bl	400f90 <__static_initialization_and_destruction_0(int, int)>
+  401004:	a8c17bfd 	ldp	x29, x30, [sp], #16
+  401008:	d65f03c0 	ret
+
+000000000040100c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>:
+	~duration() = default;
+	duration& operator=(const duration&) = default;
+
+	// 20.11.5.2 observer
+	constexpr rep
+	count() const
+  40100c:	d10043ff 	sub	sp, sp, #0x10
+  401010:	f90007e0 	str	x0, [sp, #8]
+	{ return __r; }
+  401014:	f94007e0 	ldr	x0, [sp, #8]
+  401018:	f9400000 	ldr	x0, [x0]
+  40101c:	910043ff 	add	sp, sp, #0x10
+  401020:	d65f03c0 	ret
+
+0000000000401024 <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)>:
+	  constexpr explicit duration(const _Rep2& __rep)
+  401024:	d10043ff 	sub	sp, sp, #0x10
+  401028:	f90007e0 	str	x0, [sp, #8]
+  40102c:	f90003e1 	str	x1, [sp]
+	  : __r(static_cast<rep>(__rep)) { }
+  401030:	f94003e0 	ldr	x0, [sp]
+  401034:	f9400001 	ldr	x1, [x0]
+  401038:	f94007e0 	ldr	x0, [sp, #8]
+  40103c:	f9000001 	str	x1, [x0]
+  401040:	d503201f 	nop
+  401044:	910043ff 	add	sp, sp, #0x10
+  401048:	d65f03c0 	ret
+
+000000000040104c <std::setprecision(int)>:
+   *  Sent to a stream object, this manipulator calls @c precision(__n) for
+   *  that object.
+  */
+  inline _Setprecision
+  setprecision(int __n)
+  { return { __n }; }
+  40104c:	d10043ff 	sub	sp, sp, #0x10
+  401050:	b9000fe0 	str	w0, [sp, #12]
+  401054:	b9400fe0 	ldr	w0, [sp, #12]
+  401058:	910043ff 	add	sp, sp, #0x10
+  40105c:	d65f03c0 	ret
+
+0000000000401060 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+	  constexpr duration(const duration<_Rep2, _Period2>& __d)
+  401060:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  401064:	910003fd 	mov	x29, sp
+  401068:	f9000fe0 	str	x0, [sp, #24]
+  40106c:	f9000be1 	str	x1, [sp, #16]
+	  : __r(duration_cast<duration>(__d).count()) { }
+  401070:	f9400be0 	ldr	x0, [sp, #16]
+  401074:	94000037 	bl	401150 <std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1l> > >::value, std::chrono::duration<double, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+  401078:	fd0017e0 	str	d0, [sp, #40]
+  40107c:	9100a3e0 	add	x0, sp, #0x28
+  401080:	9400003d 	bl	401174 <std::chrono::duration<double, std::ratio<1l, 1l> >::count() const>
+  401084:	f9400fe0 	ldr	x0, [sp, #24]
+  401088:	fd000000 	str	d0, [x0]
+  40108c:	d503201f 	nop
+  401090:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  401094:	d65f03c0 	ret
+
+0000000000401098 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)>:
+      }
+
+    /// The difference between two time points (as a duration)
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr typename common_type<_Dur1, _Dur2>::type
+      operator-(const time_point<_Clock, _Dur1>& __lhs,
+  401098:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  40109c:	910003fd 	mov	x29, sp
+  4010a0:	f9000fe0 	str	x0, [sp, #24]
+  4010a4:	f9000be1 	str	x1, [sp, #16]
+		const time_point<_Clock, _Dur2>& __rhs)
+      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
+  4010a8:	f9400fe0 	ldr	x0, [sp, #24]
+  4010ac:	94000023 	bl	401138 <std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const>
+  4010b0:	f90013e0 	str	x0, [sp, #32]
+  4010b4:	f9400be0 	ldr	x0, [sp, #16]
+  4010b8:	94000020 	bl	401138 <std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const>
+  4010bc:	f90017e0 	str	x0, [sp, #40]
+  4010c0:	9100a3e1 	add	x1, sp, #0x28
+  4010c4:	910083e0 	add	x0, sp, #0x20
+  4010c8:	94000003 	bl	4010d4 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+  4010cc:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  4010d0:	d65f03c0 	ret
+
+00000000004010d4 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+      operator-(const duration<_Rep1, _Period1>& __lhs,
+  4010d4:	a9bb7bfd 	stp	x29, x30, [sp, #-80]!
+  4010d8:	910003fd 	mov	x29, sp
+  4010dc:	f9000bf3 	str	x19, [sp, #16]
+  4010e0:	f90017e0 	str	x0, [sp, #40]
+  4010e4:	f90013e1 	str	x1, [sp, #32]
+	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+  4010e8:	f94017e0 	ldr	x0, [sp, #40]
+  4010ec:	f9400000 	ldr	x0, [x0]
+  4010f0:	f90023e0 	str	x0, [sp, #64]
+  4010f4:	910103e0 	add	x0, sp, #0x40
+  4010f8:	97ffffc5 	bl	40100c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>
+  4010fc:	aa0003f3 	mov	x19, x0
+  401100:	f94013e0 	ldr	x0, [sp, #32]
+  401104:	f9400000 	ldr	x0, [x0]
+  401108:	f90027e0 	str	x0, [sp, #72]
+  40110c:	910123e0 	add	x0, sp, #0x48
+  401110:	97ffffbf 	bl	40100c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>
+  401114:	cb000260 	sub	x0, x19, x0
+  401118:	f9001fe0 	str	x0, [sp, #56]
+  40111c:	9100e3e1 	add	x1, sp, #0x38
+  401120:	9100c3e0 	add	x0, sp, #0x30
+  401124:	97ffffc0 	bl	401024 <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)>
+  401128:	f9401be0 	ldr	x0, [sp, #48]
+      }
+  40112c:	f9400bf3 	ldr	x19, [sp, #16]
+  401130:	a8c57bfd 	ldp	x29, x30, [sp], #80
+  401134:	d65f03c0 	ret
+
+0000000000401138 <std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const>:
+	time_since_epoch() const
+  401138:	d10043ff 	sub	sp, sp, #0x10
+  40113c:	f90007e0 	str	x0, [sp, #8]
+	{ return __d; }
+  401140:	f94007e0 	ldr	x0, [sp, #8]
+  401144:	f9400000 	ldr	x0, [x0]
+  401148:	910043ff 	add	sp, sp, #0x10
+  40114c:	d65f03c0 	ret
+
+0000000000401150 <std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1l> > >::value, std::chrono::duration<double, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+      duration_cast(const duration<_Rep, _Period>& __d)
+  401150:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  401154:	910003fd 	mov	x29, sp
+  401158:	f9000fe0 	str	x0, [sp, #24]
+	return __dc::__cast(__d);
+  40115c:	f9400fe0 	ldr	x0, [sp, #24]
+  401160:	9400000b 	bl	40118c <std::chrono::duration<double, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1l> >, std::ratio<1l, 1000000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+  401164:	9e660000 	fmov	x0, d0
+  401168:	9e670000 	fmov	d0, x0
+      }
+  40116c:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  401170:	d65f03c0 	ret
+
+0000000000401174 <std::chrono::duration<double, std::ratio<1l, 1l> >::count() const>:
+	count() const
+  401174:	d10043ff 	sub	sp, sp, #0x10
+  401178:	f90007e0 	str	x0, [sp, #8]
+	{ return __r; }
+  40117c:	f94007e0 	ldr	x0, [sp, #8]
+  401180:	fd400000 	ldr	d0, [x0]
+  401184:	910043ff 	add	sp, sp, #0x10
+  401188:	d65f03c0 	ret
+
+000000000040118c <std::chrono::duration<double, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1l> >, std::ratio<1l, 1000000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+	  __cast(const duration<_Rep, _Period>& __d)
+  40118c:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  401190:	910003fd 	mov	x29, sp
+  401194:	f9000fe0 	str	x0, [sp, #24]
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+  401198:	f9400fe0 	ldr	x0, [sp, #24]
+  40119c:	97ffff9c 	bl	40100c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>
+  4011a0:	9e620000 	scvtf	d0, x0
+  4011a4:	d2d9aca0 	mov	x0, #0xcd6500000000        	// #225833675390976
+  4011a8:	f2e839a0 	movk	x0, #0x41cd, lsl #48
+  4011ac:	9e670001 	fmov	d1, x0
+  4011b0:	1e611800 	fdiv	d0, d0, d1
+	    return _ToDur(static_cast<__to_rep>(
+  4011b4:	fd0017e0 	str	d0, [sp, #40]
+  4011b8:	9100a3e1 	add	x1, sp, #0x28
+  4011bc:	910083e0 	add	x0, sp, #0x20
+  4011c0:	94000006 	bl	4011d8 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<double, void>(double const&)>
+	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+  4011c4:	fd4013e0 	ldr	d0, [sp, #32]
+  4011c8:	9e660000 	fmov	x0, d0
+  4011cc:	9e670000 	fmov	d0, x0
+	  }
+  4011d0:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  4011d4:	d65f03c0 	ret
+
+00000000004011d8 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<double, void>(double const&)>:
+	  constexpr explicit duration(const _Rep2& __rep)
+  4011d8:	d10043ff 	sub	sp, sp, #0x10
+  4011dc:	f90007e0 	str	x0, [sp, #8]
+  4011e0:	f90003e1 	str	x1, [sp]
+	  : __r(static_cast<rep>(__rep)) { }
+  4011e4:	f94003e0 	ldr	x0, [sp]
+  4011e8:	fd400000 	ldr	d0, [x0]
+  4011ec:	f94007e0 	ldr	x0, [sp, #8]
+  4011f0:	fd000000 	str	d0, [x0]
+  4011f4:	d503201f 	nop
+  4011f8:	910043ff 	add	sp, sp, #0x10
+  4011fc:	d65f03c0 	ret
+
+0000000000401200 <__libc_csu_init>:
+  401200:	a9bc7bfd 	stp	x29, x30, [sp, #-64]!
+  401204:	910003fd 	mov	x29, sp
+  401208:	a90153f3 	stp	x19, x20, [sp, #16]
+  40120c:	90000094 	adrp	x20, 411000 <__FRAME_END__+0xf8f0>
+  401210:	91370294 	add	x20, x20, #0xdc0
+  401214:	a9025bf5 	stp	x21, x22, [sp, #32]
+  401218:	90000095 	adrp	x21, 411000 <__FRAME_END__+0xf8f0>
+  40121c:	9136c2b5 	add	x21, x21, #0xdb0
+  401220:	cb150294 	sub	x20, x20, x21
+  401224:	2a0003f6 	mov	w22, w0
+  401228:	a90363f7 	stp	x23, x24, [sp, #48]
+  40122c:	aa0103f7 	mov	x23, x1
+  401230:	aa0203f8 	mov	x24, x2
+  401234:	9343fe94 	asr	x20, x20, #3
+  401238:	97fffdcc 	bl	400968 <_init>
+  40123c:	b4000174 	cbz	x20, 401268 <__libc_csu_init+0x68>
+  401240:	d2800013 	mov	x19, #0x0                   	// #0
+  401244:	d503201f 	nop
+  401248:	f8737aa3 	ldr	x3, [x21, x19, lsl #3]
+  40124c:	aa1803e2 	mov	x2, x24
+  401250:	91000673 	add	x19, x19, #0x1
+  401254:	aa1703e1 	mov	x1, x23
+  401258:	2a1603e0 	mov	w0, w22
+  40125c:	d63f0060 	blr	x3
+  401260:	eb13029f 	cmp	x20, x19
+  401264:	54ffff21 	b.ne	401248 <__libc_csu_init+0x48>  // b.any
+  401268:	a94153f3 	ldp	x19, x20, [sp, #16]
+  40126c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401270:	a94363f7 	ldp	x23, x24, [sp, #48]
+  401274:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  401278:	d65f03c0 	ret
+
+000000000040127c <.annobin___libc_csu_fini.start>:
+  40127c:	d503201f 	nop
+
+0000000000401280 <__libc_csu_fini>:
+  401280:	d65f03c0 	ret
+
+Disassembly of section .fini:
+
+0000000000401284 <_fini>:
+  401284:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+  401288:	910003fd 	mov	x29, sp
+  40128c:	a8c17bfd 	ldp	x29, x30, [sp], #16
+  401290:	d65f03c0 	ret

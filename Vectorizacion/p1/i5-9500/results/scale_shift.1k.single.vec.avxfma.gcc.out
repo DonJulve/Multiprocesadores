@@ -1,0 +1,30 @@
+                     Time    TPE
+              Loop    ns     ps/el     Checksum 
+       scale_shift   42.8     41.8     5119.999512 
+       ss_intr_SSE   81.9     80.0     5119.999512 
+       ss_intr_AVX   43.2     42.2     5119.999512 
+
+LEN: 1024, NTIMES: 15728640
+
+
+ Performance counter stats for './scale_shift.1k.single.vec.avxfma.gcc':
+
+          2,642.83 msec task-clock                #    0.988 CPUs utilized          
+                50      context-switches          #   18.919 /sec                   
+                 1      cpu-migrations            #    0.378 /sec                   
+                66      page-faults               #   24.973 /sec                   
+    11,588,070,004      cycles                    #    4.385 GHz                    
+    49,210,041,414      instructions              #    4.25  insn per cycle         
+     8,196,845,656      branches                  #    3.102 G/sec                  
+        47,224,027      branch-misses             #    0.58% of all branches        
+     8,339,292,603      L1-dcache-loads           #    3.155 G/sec                  
+            79,552      L1-dcache-load-misses     #    0.00% of all L1-dcache accesses
+            11,908      LLC-loads                 #    4.506 K/sec                  
+             1,678      LLC-load-misses           #   14.09% of all LL-cache accesses
+
+       2.673897389 seconds time elapsed
+
+       2.638029000 seconds user
+       0.002992000 seconds sys
+
+

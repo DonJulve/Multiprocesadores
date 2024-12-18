@@ -1,0 +1,9 @@
+../ss_align.c: In function 'main':
+../ss_align.c:294:20: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+  294 |   printf("NTIMES: %u\n", NTIMES);
+      |                   ~^
+      |                    |
+      |                    unsigned int
+      |                   %lu
+../ss_align.c:120:32: optimized: loop vectorized using 32 byte vectors
+../ss_align.c:141:32: optimized: loop vectorized using 32 byte vectors

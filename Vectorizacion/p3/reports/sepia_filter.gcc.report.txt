@@ -1,0 +1,61 @@
+sepia_filter.c:54:32: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:114:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:114:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:107:32: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:167:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:167:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:159:32: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:222:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:222:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:214:32: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:278:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:278:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:270:32: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:435:5: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:435:5: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:409:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:409:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:397:5: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:397:5: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:437:29: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:515:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:515:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:493:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:493:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:484:9: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:484:9: optimized: loop vectorized using 16 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:517:33: optimized: basic block part vectorized using 32 byte vectors
+sepia_filter.c:604:13: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:584:13: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:576:13: optimized: loop vectorized using 32 byte vectors
+sepia_filter.c:563:32: optimized: basic block part vectorized using 32 byte vectors

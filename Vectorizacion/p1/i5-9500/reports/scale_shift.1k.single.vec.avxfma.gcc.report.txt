@@ -1,0 +1,1 @@
+../scale_shift.c:105:36: optimized: loop vectorized using 32 byte vectors

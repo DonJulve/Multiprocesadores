@@ -1,0 +1,2 @@
+misc.c:84:23: optimized: basic block part vectorized using 32 byte vectors
+misc.c:142:32: optimized: basic block part vectorized using 32 byte vectors

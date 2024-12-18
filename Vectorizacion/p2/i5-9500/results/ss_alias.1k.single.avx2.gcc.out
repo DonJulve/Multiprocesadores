@@ -1,0 +1,12 @@
+                     Time       TPE
+             Loop     ns       ps/el     Checksum
+       ss_alias_v1  2992.7    2922.6     5093.000000 
+       ss_alias_v1    49.6      48.5     5084.000977 
+       ss_alias_v1    49.6      48.5     5119.999512 
+       ss_alias_v1    49.7      48.5     2355.224365 
+       ss_alias_v2    64.0      62.5     2355.224365 
+       ss_alias_v2    63.9      62.4     2355.224365 
+       ss_alias_v3    50.5      49.3     2355.224365 
+       ss_alias_v3    50.4      49.2     2355.224365 
+       ss_alias_v4    63.9      62.4     2355.224365 
+   scale_and_shift    43.7      42.7     2355.224365 

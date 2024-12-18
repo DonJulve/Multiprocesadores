@@ -1,0 +1,1 @@
+./comp.sh: line 165: gcc-7: command not found
